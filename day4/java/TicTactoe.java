@@ -7,10 +7,10 @@ public static void main(String[] args){
 
 
 	int row = 3;
-	int colum = 3;
+	int column = 3;
 	int count = 0;
 	int counter = 0;
-	String cell = null;
+	String tic = null;
 	String inputCharacter = null;
 	
 		String table [][] = new String [3][3];
@@ -30,64 +30,61 @@ public static void main(String[] args){
 	
 
 
-	System.out.print("input cell : "  );
-	String cell = input.nextLine(); 
+	System.out.print("input tic : "  );
+	 tic = input.nextLine(); 
 
 
 	System.out.print("input x or o : "  );
-	String inputCharacter = input.nextLine();
-	if inputCharacter.equalsIgnoreCase("X");
-	if inputCharacter.equalsIgnoreCase("O");
+	 inputCharacter = input.nextLine();
 	
 
 
 
+	if (tic.equals("1")){
 
-	if (cell.equals("1")){
-
-		cell = table [0][0];
+		tic = table [0][0];
 		table [0][0] = inputCharacter;
 		 
 	}else
-	if (cell.equals("2")){
+	if (tic.equals("2")){
 		
-		cell = table [0][1]; 
+		tic = table [0][1]; 
 		table [0][1] = inputCharacter;
 	}else
-	if (cell.equals("3")){
+	if (tic.equals("3")){
 		
-		cell = table [0][2]; 
+		tic = table [0][2]; 
 		table [0][2] = inputCharacter;
 	}else
-	if (cell.equals("4")){
+	if (tic.equals("4")){
 		
-		cell = table [1][0];
+		tic = table [1][0];
 		table [1][0] = inputCharacter;
 	}else
-	if (cell.equals("5")){
+	if (tic.equals("5")){
 		
-		cell = table [1][1];
+		tic = table [1][1];
 		table [1][1] = inputCharacter;
 
 	}else
-	if (cell.equals("6")){
+	if (tic.equals("6")){
 		
-		cell = table [1][2];
+		tic = table [1][2];
 		table [1][2] = inputCharacter;
 	}else
-	if (cell.equals("7")){
+	if (tic.equals("7")){
 		
-		cell = table [2][0];
+		tic = table [2][0];
 		table [2][0] = inputCharacter;
 	}else
-	if (cell.equals("8")){
+	if (tic.equals("8")){
 		
-		cell = table [2][1];
+		tic = table [2][1];
 		table [2][1] = inputCharacter; 
 	}else
-	if (cell.equals("9")){
+	if (tic.equals("9")){
 		
-		cell = table [2][2]; 
+		tic = table [2][2]; 
 		table [2][2] = inputCharacter;}
 
 
