@@ -1,0 +1,13 @@
+import org.junit.jupiter.api.Test; import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class AgeCalculatorTest {
+
+
+	@Test //marker
+	public void testThatCalculatesAge(){
+	int age = AgeCalculator.getAge(21/Dec/2022,17/05/2024);
+	int expectedAge = 1;
+	//assertion
+	assertEquals(expectedAge, age);
+	
+	}
