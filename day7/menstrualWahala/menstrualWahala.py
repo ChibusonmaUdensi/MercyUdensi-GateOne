@@ -13,6 +13,3 @@ def main():
 	ovulation_date = lmp + ovulation_day
 	print("Ovulation Date" + ovulation_date.strftime("%d/%m/%Y"))
 
-
-
-

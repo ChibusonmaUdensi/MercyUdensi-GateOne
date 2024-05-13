@@ -21,7 +21,8 @@ public class MenstrualWahala {
 }
 
 		public static int ovulationDay(int cycleLength) {
-			
+			estimatedOvulation = cycleLength - 14;
+	
 			
 			
 
