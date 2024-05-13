@@ -17,12 +17,11 @@ public class MenstrualWahala {
 
 	public static String lastPeriod(String lastMenstrualPeriod){
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("[dd/MM/yyyy][dd-MM-yyyy][dd/MMM/yyyy]");				LocalDate localDate = LocalDate.parse(lastMenstrualPeriod, formatter);
-		LocalDate currentDate =
+		LocalDate currentDate =  
 }
 
 		public static int ovulationDay(int cycleLength) {
-			estimatedOvulation = cycleLength - 14;
-	
+			
 			
 			
 
