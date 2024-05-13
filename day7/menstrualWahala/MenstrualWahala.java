@@ -11,19 +11,16 @@ public class MenstrualWahala {
 		String lastMenstrualPeriod = input.nextLine();
 		System.out.println("Enter the cycle length: ");
 		int cycleLength = input.nextInt();
-		System.out.println(ovulationDay(cycleLength));
-		System.out.println(lastPeriod(lastMenstrualPeriod));
-		}
-
-	public static String lastPeriod(String lastMenstrualPeriod){
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("[dd/MM/yyyy][dd-MM-yyyy][dd/MMM/yyyy]");				LocalDate localDate = LocalDate.parse(lastMenstrualPeriod, formatter);
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("[dd/MM/yyyy][dd-MM-yyyy][dd/MMM/yyyy]");							LocalDate localDate = LocalDate.parse(lastMenstrualPeriod, formatter);
 		LocalDate currentDate =  
+		System.out.println(ovulationDay(cycleLength));
+		
 }
 
-		public static int ovulationDay(int cycleLength) {
+			public static int ovulationDay(int cycleLength) {
 			estimatedOvulation = cycleLength - 14;
 	
-			
+			}
 			
 
 }
