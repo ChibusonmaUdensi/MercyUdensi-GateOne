@@ -33,11 +33,12 @@ public class MenstrualWahala {
 		
 		for (int count = 1; count <= periodLength; count++){
 	//	String flowDates = nextPeriod  + ((count)- 1) days;
-		System.out.print("Your FlowDates are : " + nextPeriod +(count - 1));
+		System.out.print("Your FlowDates  are -: " + nextPeriod +  "-"  +  (count) + "days");
 
 			
 			count++;
-							
+
+		System.out.printlnP{.,;]]]]							
 }
 		
 
