@@ -74,9 +74,6 @@ System.out.println(EnquirySeven[count]);}
 String responseSeven = input.nextLine();
 
 
-
-
-
 		System.out.println("How long does your period last?");
 		int periodLength = input.nextInt();
 		System.out.println("Enter first  date of last menstrual period: ");
@@ -84,22 +81,8 @@ String responseSeven = input.nextLine();
 		
 		System.out.println("Enter the cycle length: ");
 		int cycleLength = input.nextInt();
-		String lastDate = firstDate +periodLength;
-
-		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
-		Calendar cal = Calendar.getInstance();
-		try{
-			cal.setTime(sdf.parse(firstDate));
-			cal.setTime(sdf.parse(lastDate));
-			}catch(ParseException e){
-				e.printStackTrace();
-				}
-	
-
-		cal.add(Calendar.DATE, cycleLength);
-		cal.add(Calendar.DATE, lastDate);
-		String nextPeriod = sdf.format(cal.getTime());
 		
+	
 		System.out.println("Next Period Start: " + nextPeriod);
 		
 		for (int count = 1; count <= periodLength; count++){
