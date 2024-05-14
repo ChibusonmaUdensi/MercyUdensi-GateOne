@@ -9,6 +9,12 @@ public class MenstrualWahala {
 	
 		public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
+
+
+String[] EnquiryOne = {"A. Feeling a bit tired", "B.  Yes I've been having some cramps", "C. My mood has been all over the placen lately ", "D. Trying to practice more self care like taking warm baths", "E. I've been trying to drink more water & eat healthier" };
+System.out.print("How are you feeling lately?");
+for (int count = 0; count < EnquiryOne; count++);
+
 		System.out.println("How long does your period last?");
 		int periodLength = input.nextInt();
 		System.out.println("Enter first  date of last menstrual period: ");
@@ -38,7 +44,7 @@ public class MenstrualWahala {
 			
 			count++;
 
-		System.out.printlnP{.,;]]]]							
+		//System.out.printlnP{.,;]]]]							
 }
 		
 
