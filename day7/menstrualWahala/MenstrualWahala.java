@@ -75,20 +75,20 @@ String responseSeven = input.nextLine();
 		System.out.println("How long does your period last?");
 		int periodLength = input.nextInt();
 		
-		System.out.println("Enter first  date of last menstrual period (dd-mm-yyyy): ");
+		System.out.println("Enter first  date of last menstrual period (dd/mm/yyyy): ");
 		String firstDate = input.next();
 		
 		System.out.println("Enter the cycle length: ");
 		int cycleLength = input.nextInt();
 		LocalDate localDate = LocalDate.now();
 		if (cycleLength < 21 || cycleLength > 35 ) {
-			System.out.print("Irregular cycle. " + "Your lifestyle choices can have more influence on your period than you might think." + "High stress levels, sudden weight loss, excessive exercise, and even changes in diet can lead to shorter periods." );
+			System.out.print("Irregular cycle. " + "Your lifestyle choices can have more influence on your period than 	you might think." + "High stress levels, sudden weight loss, excessive exercise, and even changes in diet can lead 	to shorter periods." );
 		}
 		if (cycleLength > 21||cycleLength < 35) {
 			System.out.println("Regular period");
 		}
 
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		String myFormat = localDate.format(formatter);
 		LocalDate firstDates = LocalDate.parse(firstDate, formatter);
 		
@@ -99,13 +99,17 @@ String responseSeven = input.nextLine();
 		LocalDate flowDates = nextPeriod.plusDays(periodLength);
 		System.out.println("Expected period duration:" + nextPeriod + "-" +  flowDates);
 
-	//	int ovulationDay = cycleLength - 14;
 		
 		LocalDate ovulationDate = firstDates.minusDays(14);
-		LocalDate safePeriod = firstDates.plusDays(7);
-		
-		System.out.print("Ovulation Day next Month: " +ovulationDate);
+		LocalDate fertilePeriod = ovulationDate.minusDays(5);
+		LocalDate fertilePeriod2 = ovulationDate.plusDays(1);
 
+		LocalDate safePeriod = firstDates.plusDays(14);
+		//LocalDate safePeriod2 = firstDates.
+
+		System.out.println("Ovulation Day next Month: " +ovulationDate);
+		System.out.println("Your fertile period is from:" + fertilePeriod + "-" + fertilePeriod2); 
+		System.out.println("Safe Period Days: " + firstDates  + "-" +  safePeriod);
 		//if (cycleLength > 26|| cycleLength <= 32){
 		//	System.out.println("Your safe periods runs from day 1 - day 7 of your cycle");
 		//	}
