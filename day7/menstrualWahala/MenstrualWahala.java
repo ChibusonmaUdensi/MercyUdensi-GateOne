@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.time.Period;
-import java.util.Date;
 import java.time.format.DateTimeFormatter;
 import java.text.SimpleDateFormat;
 public class MenstrualWahala {
@@ -88,7 +87,7 @@ String responseSeven = input.nextLine();
 		if (cycleLength > 21||cycleLength < 35) {
 			System.out.println("Regular period");
 		}
-		
+
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 		String myFormat = localDate.format(formatter);
 		LocalDate firstDates = LocalDate.parse(firstDate, formatter);
@@ -100,12 +99,16 @@ String responseSeven = input.nextLine();
 		LocalDate flowDates = nextPeriod.plusDays(periodLength);
 		System.out.println("Expected period duration:" + nextPeriod + "-" +  flowDates);
 
-		int ovulationDay = cycleLength - 14;
-		Date date = new Date(ovulationDay);
+	//	int ovulationDay = cycleLength - 14;
 		
-		System.out.print("Ovulation Day next Month: " +date);
+		LocalDate ovulationDate = firstDates.minusDays(14);
+		LocalDate safePeriod = firstDates.plusDays(7);
+		
+		System.out.print("Ovulation Day next Month: " +ovulationDate);
 
-		//if (cycleLength > 25 
+		//if (cycleLength > 26|| cycleLength <= 32){
+		//	System.out.println("Your safe periods runs from day 1 - day 7 of your cycle");
+		//	}
 		
 	}
 } 
