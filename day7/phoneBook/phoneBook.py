@@ -3,7 +3,7 @@ contacts = []
 
 def add_contact():
   """
-  Prompts the user for contact information and creates a new Contact object.
+ 
   """
   print("Enter first name: ")
   first_name = input()
@@ -17,8 +17,7 @@ def add_contact():
 
 def remove_contact():
   """
-  Prompts the user for a contact name to delete and removes it from the list.
-  """
+    """
   print("Enter contact to delete: ")
   name_to_delete = input()
   for i, contact in enumerate(contacts):
