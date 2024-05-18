@@ -4,8 +4,8 @@ public class ATMCard{
 
 public static void main(String[] args){
 	Scanner scanner = new Scanner(System.in);
-System.out.print("Enter a credit card number");
-String number = scanner.nextLine();
+	System.out.print("Enter a credit card number");
+	String number = scanner.nextLine();
 	
 System.out.print(number + " is ",  (isValid(number) ? "valid" : "invalid"));
 

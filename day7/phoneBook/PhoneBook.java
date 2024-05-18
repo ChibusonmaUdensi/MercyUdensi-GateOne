@@ -19,7 +19,7 @@ public static Contact addContact(){
 	String lastName = scanner.nextLine();
 	System.out.println("Enterphone number");
 	String number = scanner.nextLine();
-	Contact contact = new Contact(firstName, lastName, number ); //create a constructor and align so that each time you create an object of that class, it will take that nature.
+	Contact contact = new Contact(firstName, lastName, number ); 
 	contacts.add(contact);
 	return contact;
 	
@@ -27,15 +27,8 @@ public static Contact addContact(){
 }
 
 public static String removeContact(){
-System.out.print("Enter contact to delete: ");
-String deleted = scanner.next();
-for(count feed : contacts) {
-		if (feed == deleted){
-			contacts.remove(feed);
-	System.out.print("Contact deleted");
-
-}
-}
+	System.out.print("Enter contact to delete: ");
+	}
 	
 
 
@@ -45,4 +38,4 @@ for(count feed : contacts) {
 
 
 
-}
+

@@ -1,11 +1,9 @@
 import java.util.Scanner;
 import java.util.Scanner;
-public class TicTacToe{
+public class TicTacToe {
 public static void main(String[] args){
 
 	Scanner input = new Scanner(System.in);
-
-
 	int row = 3;
 	int column = 3;
 	int count = 0;
@@ -24,20 +22,15 @@ public static void main(String[] args){
 		table [2][0] = "-";
 		table [2][1] = "-";
 		table [2][2] = "-";
+ 
 
 
-
-	
-
-
+	for (int counts = 1; counts <= 9; counts++) {
 	System.out.print("input tic : "  );
 	 tic = input.nextLine(); 
 
-
 	System.out.print("input x or o : "  );
 	 inputCharacter = input.nextLine();
-	
-
 
 
 	if (tic.equals("1")){
@@ -85,8 +78,14 @@ public static void main(String[] args){
 	if (tic.equals("9")){
 		
 		tic = table [2][2]; 
-		table [2][2] = inputCharacter;}
-
+		table [2][2] = inputCharacter;
+}	for (String ti : inputCharacter[]) {
+	if (inputCharacter.contains(tic)) {
+              System.out.println("Number already entered. Please choose a different number.");
+          } 
+// else {
+            //  inputCharacter.append(tic);
+           }
 
 
 	for (int i = 0; i < 3; i++){
@@ -105,12 +104,8 @@ public static void main(String[] args){
 		System.out.print("\n");
 		System.out.print("\n");
 	}
-
-
-	
-	
-
-
+		
+}
 
 
 }

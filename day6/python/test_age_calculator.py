@@ -1,4 +1,12 @@
-from agecalculator import age_calculator:
+import java.util.scanner;
 
-def test_age_calculator():
-		assert
+public class Banke {
+	public static void main(String[] args){
+
+Scanner scanner = new Scanner(System.in);
+
+
+
+		}
+
+}
